@@ -68,7 +68,6 @@ npm install w2b
 ## Catatan
 
 - Project ini fokus ke library `W2B`. Modul `w2b-web` dan contoh proyek sengaja tidak disalin.
-- Buat repo baru di GitHub, lalu `git init`, commit, dan push ke remote yang kamu pilih.
 - Bot WhatsApp berjalan memakai akun; gunakan sesuai ToS WhatsApp.
 
 ## Lisensi
