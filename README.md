@@ -1,17 +1,18 @@
 # w2b
 
-Repositori helper bot WhatsApp berbasis **Node.js**. Intinya adalah paket [`W2B`](./W2B/README.md) — *WhatsApp Bot Helper* yang membungkus [@whiskeysockets/baileys](https://github.com/WhiskeySockets/Baileys) agar membuat bot WhatsApp jadi ringkas: setup sekali, routing berbasis perintah, dan method aksi untuk kirim teks/media.
+Repositori helper bot WhatsApp berbasis **Node.js**. Paketnya adalah `w2b` — *WhatsApp Bot Helper* yang membungkus [@whiskeysockets/baileys](https://github.com/WhiskeySockets/Baileys) agar membuat bot WhatsApp jadi ringkas: setup sekali, routing berbasis perintah, dan method aksi untuk kirim teks/media.
 
 ## Struktur
 
-| Direktori   | Isi                                                            |
-| ----------- | -------------------------------------------------------------- |
-| `W2B/`      | Paket `w2b`, WhatsApp Bot Helper (library utama).              |
-| `W2B/src/`  | Implementasi: config, routing, bot, cli, aksi, placeholder, logger, context. |
+| Berkas/Direktori | Isi |
+| --- | --- |
+| `package.json`, `package-lock.json` | Paket `w2b`, WhatsApp Bot Helper (library utama). |
+| `index.js` | Titik masuk publik — ekspor semua modul. |
+| `src/` | Implementasi: `config.js`, `routing.js`, `bot.js`, `cli.js`, `actions.js`, `placeholders.js`, `logger.js`, `context.js`. |
 
-## W2B — apa itu
+## w2b — apa itu
 
-`W2B` adalah wrapper tipis di atas Baileys. Tujuannya satu: kurangi boilerplate bikin bot WhatsApp. Kamu tinggal:
+`w2b` adalah wrapper tipis di atas Baileys. Tujuannya satu: kurangi boilerplate bikin bot WhatsApp. Kamu tinggal:
 
 1. `Setup({...})` — konfigurasi awal (session, QR, dll).
 2. `Route('perintah', handler)` — daftarkan perintah.
@@ -67,7 +68,7 @@ npm install w2b
 
 ## Catatan
 
-- Project ini fokus ke library `W2B`. Modul `w2b-web` dan contoh proyek sengaja tidak disalin.
+- Project ini fokus ke library `w2b`. Modul `w2b-web` dan contoh proyek sengaja tidak disalin.
 - Bot WhatsApp berjalan memakai akun; gunakan sesuai ToS WhatsApp.
 
 ## Lisensi
