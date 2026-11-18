@@ -1,10 +1,27 @@
 {
   "name": "w2b",
   "version": "1.0.0",
-  "description": "WhatsApp Bot Helper using Baileys",
+  "description": "WhatsApp Bot Helper using Baileys. Simple, powerful, and elegant wrapper for creating WhatsApp bots.",
   "main": "index.js",
   "type": "module",
   "license": "MIT",
+  "author": "ezaco-dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ezaco-dev/w2b.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ezaco-dev/w2b/issues"
+  },
+  "homepage": "https://github.com/ezaco-dev/w2b#readme",
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "baileys",
+    "whatsapp-bot",
+    "chatbot",
+    "whatsapp-helper"
+  ],
   "dependencies": {
     "@whiskeysockets/baileys": "^6.7.9",
     "qrcode-terminal": "^0.12.0",
