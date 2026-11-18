@@ -7,7 +7,7 @@ Repositori helper bot WhatsApp berbasis **Node.js**. Intinya adalah paket [`W2B`
 | Direktori   | Isi                                                            |
 | ----------- | -------------------------------------------------------------- |
 | `W2B/`      | Paket `w2b`, WhatsApp Bot Helper (library utama).              |
-| `W2B/src/`  | Implementasi: config, routing, bot, aksi, placeholder, logger. |
+| `W2B/src/`  | Implementasi: config, routing, bot, cli, aksi, placeholder, logger, context. |
 
 ## W2B — apa itu
 

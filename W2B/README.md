@@ -1,49 +1,48 @@
 # w2b
 
-WhatsApp Bot Helper menggunakan [@whiskeysockets/baileys](https://github.com/WhiskeySockets/Baileys).
+WhatsApp Bot Helper using [@whiskeysockets/baileys](https://github.com/WhiskeySockets/Baileys).
 
-Wrapper simpel & ringan untuk membuat bot WhatsApp dengan mudah.
+A simple and lightweight wrapper to create WhatsApp bots easily.
 
-## Instalasi
+## Installation
 
-```
+```bash
 npm install w2b
 ```
 
-## Fitur
+## Features
+- Easy setup and routing
+- Simple event handling
+- Built-in placeholder functions
+- Straightforward action methods for sending text, images, videos, documents, etc.
 
-- Setup & routing yang mudah.
-- Event handling sederhana.
-- Placeholder function bawaan.
-- Method aksi langsung untuk kirim teks, gambar, video, dokumen, dll.
+## Usage
 
-## Penggunaan
-
-```js
+```javascript
 import { Setup, Route, Run, Text } from 'w2b';
 
-// Inisialisasi bot
+// Initialize the bot
 Setup({
-  // option konfigurasi
+    // configuration options
 });
 
-// Daftarkan perintah
+// Create a route for a command
 Route('ping', async () => {
-  await Text('pong!');
+    await Text('pong!');
 });
 
-// Jalankan bot
+// Run the bot
 Run();
 ```
 
-## Ekspor
+## Exports
 
 - **Core Lifecycle**: `Setup`, `Run`, `Reload`, `Event`
 - **Routing**: `Route`, `Include`
-- **Aksi**: `Text`, `Image`, `Video`, `Document`, `Audio`, `Sticker`, `Poll`, `Location`, `Delete`, `Ban`
-- **Helper**: `GetUsrId`, `Mention`, `Arg`, `GetMedia`
-- **Konteks**: `executionContext`
+- **Actions**: `Text`, `Image`, `Video`, `Document`, `Audio`, `Sticker`, `Poll`, `Location`, `Delete`, `Ban`
+- **Helpers**: `GetUsrId`, `Mention`, `Arg`, `GetMedia`
+- **Context**: `executionContext`
 
-## Lisensi
+## License
 
 MIT
